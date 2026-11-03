@@ -21,12 +21,12 @@ return plants.map( function (plant) {
 return formaterPlant(plant)}).join("\n");
 }
 
-
 // Renvoie le plant qui a ce code (identifiant), ou undefined s'il n'existe pas.
 export function trouverParId (plants, id) {
 return plants.find(function(plant){
 return plant.id===id });
-}
+} 
+
 
 
 // Contrôle une saisie AVANT de l'ajouter. Tous les champs arrivent sous forme de TEXTE :
@@ -37,9 +37,33 @@ return plant.id===id });
 // · nombrePlants nombre ENTIER positif ou nul · dateReleve réelle au format AAAA-MM-JJ.
 
 export function verifierPlant(saisie , plants) {
+const erreurs = [];
 
+
+if (saisie.id==='') {
+erreurs.push("L'identifiant est obligatoire") ;
+} else if (plants.some((plant) => plant.id === saisie.id)) {
+  erreurs.push(`L'identifiant ${saisie.id} existe déjà dans l'inventaire.`);
 }
 
+if (saisie.nomCommun ==='') {
+erreurs.push("Le nom commun est obligatoire")
+}
+
+if(!GROUPES.includes (saisie.groupe)){
+erreurs.push(`Le groupe doit être l'un de : ${GROUPES.join(', ')}`)
+}
+
+const nombre = versNombre(saisie.nombrePlants);
+if(!Number.isInteger(nombre) || nombre < 0){
+erreurs.push("Le nombre de plants doit être un entier positif ou nul")
+}
+
+if (!estDateValide(saisie.dateReleve)) {
+    erreurs.push('La date de relevé doit être une vraie date au format AAAA-MM-JJ.');
+  }
+  return erreurs;
+}
 // Fabrique le plant à enregistrer à partir d'une saisie VALIDE : nombrePlants devient un nombre.
 export function creerPlant(saisie) {
   throw new Error('TODO : coder creerPlant dans src/registre.js');
