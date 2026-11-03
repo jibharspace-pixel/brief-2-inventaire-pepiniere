@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+Le responsable de la pépinière pédagogique souhaite centraliser et structurer l’inventaire des plants de différentes espèces en leur appliquant une classification botanique simple, issue d’une fiche de référence. Pour chaque espèce, il doit pouvoir renseigner son code, son nom commun, son groupe botanique, la quantité de plants comptabilisés ainsi que l’origine du relevé (étiquette, photo ou spécimen), l’identité de la personne ayant effectué le comptage et la date du relevé. L’outil doit lui permettre de retrouver facilement une espèce, de consulter son groupe botanique et de visualiser les quantités disponibles par espèce ainsi que le nombre total de plants recensés
 
 ## Prérequis et lancement
 
@@ -38,7 +38,7 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : le seuil de 10 plants est un repère de suivi, pas une recommandation de production.*
+✏️ Au moins trois. Par exemple : le seuil de 10 plants est un repère de suivi, pas une recommandation de production.
 
 ## Documents
 
@@ -46,4 +46,6 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+✏️ Jibhar Samuel KROMAN , https://github.com/jibharspace-pixel 
+
+ Entraide : avec qui, sur quoi
