@@ -66,11 +66,19 @@ if (!estDateValide(saisie.dateReleve)) {
 }
 // Fabrique le plant à enregistrer à partir d'une saisie VALIDE : nombrePlants devient un nombre.
 export function creerPlant(saisie) {
-  throw new Error('TODO : coder creerPlant dans src/registre.js');
+  return {
+    id: saisie.id,
+    nomCommun: saisie.nomCommun,
+    groupe: saisie.groupe,
+    nombrePlants: versNombre(saisie.nombrePlants),
+    dateReleve: saisie.dateReleve,
+  };
 }
-
 // Ajoute la saisie à l'inventaire si elle est valide (verifierPlant, puis creerPlant).
 // Renvoie les erreurs : [] si le plant a été ajouté ; sinon les messages, et rien n'est ajouté.
 export function ajouterPlant(plants, saisie) {
-  throw new Error('TODO : coder ajouterPlant dans src/registre.js');
+const erreurs = verifierPlant(saisie,plants);
+if (erreurs.length > 0 ){ return erreurs;}
+plants.push(creerPlant(saisie));
+return[];
 } 
