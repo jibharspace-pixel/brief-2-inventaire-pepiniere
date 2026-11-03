@@ -14,17 +14,20 @@ export function formaterPlant(plant) {
 // Renvoie un texte avec un plant par ligne (lignes séparées par '\n'),
 // ou 'Aucun plant enregistré.' si la liste est vide.
 export function listerPlants(plants) {
-if (plants.length === 0 ){
+if (plants.length === 0 ) {
 return "Aucun plant enregistré." ;
 } 
-return plants.map(formaterPlant).join("\n");
+return plants.map( function (plant) {
+return formaterPlant(plant)}).join("\n");
 }
 
 
 // Renvoie le plant qui a ce code (identifiant), ou undefined s'il n'existe pas.
-export function trouverParId(plants, id) {
-  throw new Error('TODO : coder trouverParId dans src/registre.js');
+export function trouverParId (plants, id) {
+return plants.find(function(plant){
+return plant.id===id });
 }
+
 
 // Contrôle une saisie AVANT de l'ajouter. Tous les champs arrivent sous forme de TEXTE :
 // { id: 'N11', nomCommun: 'papayer', groupe: 'angiosperme', nombrePlants: '15', dateReleve: '2026-10-27' }
@@ -32,8 +35,9 @@ export function trouverParId(plants, id) {
 // un tableau vide signifie « saisie valide ».
 // Règles : id obligatoire et unique · nomCommun obligatoire · groupe présent dans GROUPES
 // · nombrePlants nombre ENTIER positif ou nul · dateReleve réelle au format AAAA-MM-JJ.
-export function verifierPlant(saisie, plants) {
-  throw new Error('TODO : coder verifierPlant dans src/registre.js');
+
+export function verifierPlant(saisie , plants) {
+
 }
 
 // Fabrique le plant à enregistrer à partir d'une saisie VALIDE : nombrePlants devient un nombre.
@@ -45,4 +49,4 @@ export function creerPlant(saisie) {
 // Renvoie les erreurs : [] si le plant a été ajouté ; sinon les messages, et rien n'est ajouté.
 export function ajouterPlant(plants, saisie) {
   throw new Error('TODO : coder ajouterPlant dans src/registre.js');
-}
+} 
