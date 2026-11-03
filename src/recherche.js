@@ -22,5 +22,7 @@ return resultat;
 // Renvoie une COPIE triée par nombre de plants croissant, avec un comparateur numérique.
 // Deux plants de même nombre gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParNombrePlants(plants) {
-  throw new Error('TODO : coder trierParNombrePlants dans src/recherche.js');
+const copie = plants.slice();
+copie.sort((a,b)=>a.nombrePlants - b.nombrePlants);
+return copie;
 }
