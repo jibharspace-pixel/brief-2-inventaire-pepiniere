@@ -7,14 +7,18 @@ export const GROUPES = ['angiosperme', 'gymnosperme'];
 
 // Renvoie une ligne de texte qui décrit le plant.
 // Exemple : 'N09 | pin | gymnosperme | 8 plants | 2026-10-24'
+
 export function formaterPlant(plant) {
-  throw new Error('TODO : coder formaterPlant dans src/registre.js');
+  return `${plant.id} | ${plant.nomCommun} | ${plant.groupe} | ${plant.nombrePlants} | ${plant.dateReleve}`
 }
 
 // Renvoie un texte avec un plant par ligne (lignes séparées par '\n'),
 // ou 'Aucun plant enregistré.' si la liste est vide.
 export function listerPlants(plants) {
-  throw new Error('TODO : coder listerPlants dans src/registre.js');
+if (plants.length===0) {
+  return "Aucun plant enregistré." ;
+} 
+return plants.join('/n');
 }
 
 // Renvoie le plant qui a ce code (identifiant), ou undefined s'il n'existe pas.
@@ -28,6 +32,7 @@ export function trouverParId(plants, id) {
 // un tableau vide signifie « saisie valide ».
 // Règles : id obligatoire et unique · nomCommun obligatoire · groupe présent dans GROUPES
 // · nombrePlants nombre ENTIER positif ou nul · dateReleve réelle au format AAAA-MM-JJ.
+
 export function verifierPlant(saisie, plants) {
   throw new Error('TODO : coder verifierPlant dans src/registre.js');
 }
