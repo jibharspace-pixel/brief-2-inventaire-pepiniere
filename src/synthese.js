@@ -18,7 +18,17 @@ total = total + plant.nombrePlants;
 // Liste vide : {} (un objet vide).
 
 export function syntheseParGroupe(plants) {
-  throw new Error('TODO : coder syntheseParGroupe dans src/synthese.js');
+const synthese =  {};
+for(const plant of plants){
+const cle = plant.groupe;
+if (synthese[cle] === undefined){
+  synthese[cle] ={especes : 0 , plants : 0};
+}
+synthese[cle].especes=synthese[cle].especes+1;
+synthese[cle].plants= synthese[cle].plants + plant.nombrePlants;
+
+}
+return synthese ;
 }
 
 // Renvoie un NOUVEAU tableau avec les plants dont le nombre est INFÉRIEUR OU ÉGAL au seuil.
