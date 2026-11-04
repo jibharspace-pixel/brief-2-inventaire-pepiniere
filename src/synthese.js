@@ -34,7 +34,11 @@ return synthese ;
 // Renvoie un NOUVEAU tableau avec les plants dont le nombre est INFÉRIEUR OU ÉGAL au seuil.
 // Exemple : stocksFaibles(donnees, 10) → N09 (8 plants) et N10 (10 plants)
 export function stocksFaibles(plants, seuil) {
-  throw new Error('TODO : coder stocksFaibles dans src/synthese.js');
+ const resultat =[];
+for (const plant of plants){
+if (plant.nombrePlants<=seuil ){resultat.push(plant);}
+}
+return resultat;
 }
 
 
@@ -43,5 +47,11 @@ export function stocksFaibles(plants, seuil) {
 // Exemple : especeLaPlusAbondante(donnees) → N04 (tomate, 50 plants)
 
 export function especeLaPlusAbondante (plants) {
-
+let plusAbondant = null;
+for (const plant of plants ){
+if(plusAbondant===null ||plant.nombrePlants>plusAbondant.nombrePlants){
+  plusAbondant=plant;
+}
+}
+return plusAbondant;
 }
