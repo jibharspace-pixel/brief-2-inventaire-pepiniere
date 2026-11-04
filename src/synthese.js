@@ -7,12 +7,16 @@ export const SEUIL_STOCK_FAIBLE = 10;
 
 // Renvoie le nombre total de plants. Liste vide : 0.
 export function totalPlants(plants) {
-  throw new Error('TODO : coder totalPlants dans src/synthese.js');
+let total = 0 ;
+for (const plant of plants){
+total = total + plant.nombrePlants;
+} return total;
 }
 
 // Renvoie un objet : pour chaque groupe, le nombre d'espèces (de lignes) et le total de plants.
 // Exemple : { angiosperme: { especes: 8, plants: 222 }, gymnosperme: { especes: 2, plants: 18 } }
 // Liste vide : {} (un objet vide).
+
 export function syntheseParGroupe(plants) {
   throw new Error('TODO : coder syntheseParGroupe dans src/synthese.js');
 }
@@ -23,9 +27,11 @@ export function stocksFaibles(plants, seuil) {
   throw new Error('TODO : coder stocksFaibles dans src/synthese.js');
 }
 
+
 // Renvoie le plant (la ligne d'inventaire) qui a le plus grand nombre de plants,
 // le premier rencontré en cas d'égalité, ou null si l'inventaire est vide.
 // Exemple : especeLaPlusAbondante(donnees) → N04 (tomate, 50 plants)
-export function especeLaPlusAbondante(plants) {
-  throw new Error('TODO : coder especeLaPlusAbondante dans src/synthese.js');
+
+export function especeLaPlusAbondante (plants) {
+
 }
