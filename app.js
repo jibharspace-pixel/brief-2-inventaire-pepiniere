@@ -148,10 +148,10 @@ async function main() {
   ouvrirSaisie();
 
   const plants = await chargerJson(FICHIER_DONNEES);
-  console.log("===========================================");
-  console.log("      INVENTAIRE DE LA PEPINIERE         ");
+  console.log("=========================================== ");
+  console.log("      INVENTAIRE DE LA PEPINIERE            ");
   console.log("       Pépinière pédagoqique                ");
-  console.log("========================================== ");
+  console.log("==========================================  ");
   console.log(`${plants.length} espèce(s) chargée(s) depuis ${FICHIER_DONNEES}.`);
 
   let continuer = true;
@@ -182,6 +182,12 @@ async function main() {
         break;
       case "5":
         afficherSynthese(plants);
+        break;
+      case "6":
+        await supprimer(plants);
+        break;
+      case "7":
+        await modifier(plants);
         break;
       case "0":
       case null:

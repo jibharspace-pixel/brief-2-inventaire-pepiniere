@@ -22,15 +22,14 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 ## Fonctionnalités
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
-
 - [x] Données lues et enregistrées dans `donnees/plants.json`
 - [x] Ajouter un plant, saisies invalides refusées sans arrêter le programme
 - [x] Lister l'inventaire, message si l'inventaire est vide
 - [x] Rechercher par code ou par nom ; filtrer par groupe botanique
 - [x] Trier par nombre de plants
 - [x] Synthèse : stock total, espèces et plants par groupe, espèce la plus abondante, stocks faibles (≤ 10 plants)
-- [ ] Bonus : supprimer et modifier un plant (choix 6 et 7)
-- [ ] Bonus : tri décroissant, groupe le plus fourni
+- [ x] Bonus : supprimer et modifier un plant (choix 6 et 7)
+- [ x] Bonus : tri décroissant, groupe le plus fourni
 
 ## Données
 
