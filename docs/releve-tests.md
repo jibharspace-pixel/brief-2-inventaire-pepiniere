@@ -8,7 +8,7 @@ plants gymnosperme : 10+8 = 18.
 
 **Essais dans le menu** : un ajout valide (encore là après redémarrage), chaque règle refusée, une recherche introuvable, chaque tri, la synthèse, un choix inconnu.
 
-| Action                    | Attendu                     | Obtenu                      | Testeur: Kroman J. Samuel |
+| Action                    | Attendu                     | Obtenu                      | Testeur: KROMAN Jibhar Samuel (moi même) & FAKAYODE Abdul |
 | ------------------------- | --------------------------- | --------------------------- | -------                   |
 | Calcul du stock total     | 240                         | 240                         |                           |
 | Total espèces angiosperme | 8                           | 8                           |                           |
