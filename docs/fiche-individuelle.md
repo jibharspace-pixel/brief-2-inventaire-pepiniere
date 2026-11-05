@@ -24,5 +24,4 @@ J’ai choisi de séparer le dialogue et les règles : ajouter parle à l’util
 - KANGA Jules Christ
 
 
-
 Nous nous sommes entraidés tout au long du projet en partageant nos connaissances, en nous apportant mutuellement du soutien et en travaillant ensemble sur la compréhension du code et l'écriture des différentes fonctions, notamment dans les fichiers `stockage.js`, `registre.js` et `app.js` pour certains
