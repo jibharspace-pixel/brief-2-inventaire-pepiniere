@@ -190,6 +190,8 @@ async function main() {
         await modifier(plants);
         break;
       case "0":
+        console.log("Au revoir !");
+        continuer = false;
       case null:
         continuer = false;
         break;
