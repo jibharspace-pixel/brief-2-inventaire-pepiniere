@@ -24,7 +24,7 @@ const cle = plant.groupe;
 if (synthese[cle] === undefined){
   synthese[cle] ={especes : 0 , plants : 0};
 }
-synthese[cle].especes=synthese[cle].especes+1;
+synthese[cle].especes=synthese[cle].especes + 1;
 synthese[cle].plants= synthese[cle].plants + plant.nombrePlants;
 
 }

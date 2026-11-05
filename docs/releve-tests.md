@@ -8,14 +8,14 @@ plants gymnosperme : 10+8 = 18.
 
 **Essais dans le menu** : un ajout valide (encore là après redémarrage), chaque règle refusée, une recherche introuvable, chaque tri, la synthèse, un choix inconnu.
 
-| Action                    | Attendu                     | Obtenu                      | Testeur |
-| ------------------------- | --------------------------- | --------------------------- | ------- |
-| Calcul du stock total     | 240                         | 240                         |         |
-| Total espèces angiosperme | 8                           | 8                           |         |
-| Total plants angiosperme  | 222                         | 222                         |         |
-| Total espèces gymnosperme | 2                           | 2                           |         |
-| Total plants gymnosperme  | 18                          | 18                          |         |
-| Stock faible              | N09 N10                     | N09 N10                     |         |
-| Espèce la plus abondante  | **N04** (tomate, 50 plants) | **N04** (tomate, 50 plants) |         |
+| Action                    | Attendu                     | Obtenu                      | Testeur: Kroman J. Samuel |
+| ------------------------- | --------------------------- | --------------------------- | -------                   |
+| Calcul du stock total     | 240                         | 240                         |                           |
+| Total espèces angiosperme | 8                           | 8                           |                           |
+| Total plants angiosperme  | 222                         | 222                         |                           |
+| Total espèces gymnosperme | 2                           | 2                           |                           |
+| Total plants gymnosperme  | 18                          | 18                          |                           |
+| Stock faible              | N09 N10                     | N09 N10                     |                           |
+| Espèce la plus abondante  | **N04** (tomate, 50 plants) | **N04** (tomate, 50 plants) |                           |
 
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️

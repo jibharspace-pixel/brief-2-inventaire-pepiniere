@@ -4,7 +4,7 @@
 
 ## Contexte
 
-Le responsable de la pépinière pédagogique souhaite centraliser et structurer l’inventaire des plants de différentes espèces en leur appliquant une classification botanique simple, issue d’une fiche de référence. Pour chaque espèce, il doit pouvoir renseigner son code, son nom commun, son groupe botanique, la quantité de plants comptabilisés ainsi que l’origine du relevé (étiquette, photo ou spécimen), l’identité de la personne ayant effectué le comptage et la date du relevé. L’outil doit lui permettre de retrouver facilement une espèce, de consulter son groupe botanique et de visualiser les quantités disponibles par espèce ainsi que le nombre total de plants recensés
+Le responsable de la pépinière pédagogique souhaite centraliser et structurer l’inventaire des plants de différentes espèces en leur appliquant une classification botanique simple, issue d’une fiche de référence. Pour chaque espèce, il doit pouvoir renseigner son code, son nom commun, son groupe botanique, la quantité de plants comptabilisés ainsi que l’origine du relevé (étiquette, photo ou spécimen), l’identité de la personne ayant effectué le comptage et la date du relevé. L’outil doit lui permettre de retrouver facilement une espèce, de consulter son groupe botanique et de visualiser les quantités disponibles par espèce ainsi que le nombre total de plants recensés.
 
 ## Prérequis et lancement
 
@@ -23,12 +23,12 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/plants.json`
-- [ ] Ajouter un plant, saisies invalides refusées sans arrêter le programme
-- [ ] Lister l'inventaire, message si l'inventaire est vide
-- [ ] Rechercher par code ou par nom ; filtrer par groupe botanique
-- [ ] Trier par nombre de plants
-- [ ] Synthèse : stock total, espèces et plants par groupe, espèce la plus abondante, stocks faibles (≤ 10 plants)
+- [x] Données lues et enregistrées dans `donnees/plants.json`
+- [x] Ajouter un plant, saisies invalides refusées sans arrêter le programme
+- [x] Lister l'inventaire, message si l'inventaire est vide
+- [x] Rechercher par code ou par nom ; filtrer par groupe botanique
+- [x] Trier par nombre de plants
+- [x] Synthèse : stock total, espèces et plants par groupe, espèce la plus abondante, stocks faibles (≤ 10 plants)
 - [ ] Bonus : supprimer et modifier un plant (choix 6 et 7)
 - [ ] Bonus : tri décroissant, groupe le plus fourni
 
@@ -46,6 +46,6 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ Jibhar Samuel KROMAN , https://github.com/jibharspace-pixel 
+✏️ Jibhar Samuel KROMAN, https://github.com/jibharspace-pixel
 
- Entraide : avec qui, sur quoi
+Entraide : avec qui, sur quoi

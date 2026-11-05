@@ -14,7 +14,6 @@ export function versNombre(texte) {
   const nombre = Number(nettoye);
   return Number.isFinite(nombre) ? nombre : NaN;
 }
-
 // Renvoie true si le texte est une date qui existe, écrite au format AAAA-MM-JJ.
 // Exemples : estDateValide('2026-10-22') → true
 //            estDateValide('22/10/2026') → false · estDateValide('2026-02-30') → false
