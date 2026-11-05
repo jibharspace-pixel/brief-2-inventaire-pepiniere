@@ -18,6 +18,12 @@ Le responsable d'une pépinière pédagogique a des plants de plusieurs espèces
 ==================================================
 10 espèce(s) chargée(s) depuis donnees/plants.json.
 
+==================================================
+   INVENTAIRE DE LA PÉPINIÈRE
+   Pépinière pédagogique
+==================================================
+10 espèce(s) chargée(s) depuis donnees/plants.json.
+
 --------------------- MENU ---------------------
 1. Ajouter un plant
 2. Lister l'inventaire
@@ -25,7 +31,6 @@ Le responsable d'une pépinière pédagogique a des plants de plusieurs espèces
 4. Trier (nombre de plants)
 5. Synthèse des quantités
 0. Quitter
-Votre choix :
 ```
 
 Les plants sont lus dans `donnees/plants.json`, et chaque ajout y est enregistré.

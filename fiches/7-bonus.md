@@ -7,9 +7,14 @@ Seulement quand le socle est complet. Pas de pseudo-code de référence ni de pi
 ## Les fonctions (`src/bonus.js`, +1)
 
 - **`supprimerPlant(plants, id)`** : retire le plant de l'inventaire et le renvoie ; `undefined` s'il n'existe pas (l'inventaire ne change pas). Piste : il faut sa position dans le tableau, puis le retirer à cette position ; cherchez une méthode des tableaux pour chaque étape.
+
+
 - **`modifierPlant(plants, id, champ, valeur)`** : modifie un champ ; la valeur arrive en texte et suit les règles de l'ajout (`nombrePlants` est enregistré comme un nombre). Renvoie les erreurs (`[]` si c'est fait). Erreur si le code est introuvable, si `champ` vaut `'id'`, si `champ` n'est pas dans `CHAMPS_MODIFIABLES`, ou si la valeur est refusée ; dans ce cas, rien ne change. Pistes : les règles existent déjà dans `verifierPlant` ; attention, le plant ne doit pas être vu comme un doublon de lui-même.
+
 - **`trierParNombrePlantsDecroissant(plants)`** : une copie, l'espèce qui a le plus de plants d'abord.
+
 - **`groupeLePlusFourni(plants)`** : `{ groupe: 'angiosperme', plants: 222 }` avec les données de départ ; `null` si l'inventaire est vide ; en cas d'égalité, le premier groupe rencontré.
+
 
 ## Le menu (`app.js`, +1)
 

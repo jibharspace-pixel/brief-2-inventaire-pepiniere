@@ -20,6 +20,8 @@ Renvoie une **copie** triée par nombre de plants croissant ; deux nombres égau
 
 **À vous.** Le brief impose un **comparateur numérique** : cherchez dans la documentation de `sort` ce qu'est une fonction de comparaison. Essayez dans un terminal `node` : `[9, 100, 35].sort()`.
 
+
+
 ## 4. Le menu : choix 3 et 4 (`app.js`)
 
 Dialogue **imposé** :

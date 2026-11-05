@@ -17,11 +17,12 @@ J’ai choisi de séparer le dialogue et les règles : ajouter parle à l’util
 
 2. **Une difficulté, et sa solution** : ✏️
 
-
 3. **L'entraide** (qui m'a aidé, qui j'ai aidé, sur quoi) : ✏️
 - Topka Odilon
 - Batiyé Astrid 
 - Séné Ella Rodrigue 
+- KANGA Jules Christ
+
+
 
 Nous nous sommes entraidés tout au long du projet en partageant nos connaissances, en nous apportant mutuellement du soutien et en travaillant ensemble sur la compréhension du code et l'écriture des différentes fonctions, notamment dans les fichiers `stockage.js`, `registre.js` et `app.js` pour certains
-

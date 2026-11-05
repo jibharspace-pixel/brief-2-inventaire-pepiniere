@@ -15,7 +15,9 @@ Codez les fonctions dans l'ordre : chacune sert aux suivantes. Les tests fournis
 `app.js` ne contient que les imports et le nom du fichier de données : écrivez tout le menu. Comportement imposé :
 
 1. Au lancement : l'écran d'accueil, puis les données lues avec `chargerJson` et le message `10 espèce(s) chargée(s) depuis donnees/plants.json.`. Si la lecture échoue : `Impossible de lire donnees/plants.json : <message de l'erreur>. L'inventaire démarre vide.`, et le programme continue avec une liste vide.
+
 2. Avant **chaque** choix, le menu s'affiche, puis la question `Votre choix : `. Lisez `src/saisie.js` (`ouvrirSaisie`, `demander`, `fermerSaisie`).
+
 3. Chaque choix lance son action, puis le menu revient.
 4. `0` quitte en affichant `Au revoir !` ; le programme quitte aussi si `demander` renvoie `null` (Ctrl+C).
 5. Un autre choix affiche `Choix inconnu : « 9 ». Tapez un chiffre du menu.`, puis le menu revient.

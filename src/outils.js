@@ -24,3 +24,5 @@ export function estDateValide(texte) {
   const date = new Date(`${texte}T00:00:00Z`);
   return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === texte;
 }
+
+

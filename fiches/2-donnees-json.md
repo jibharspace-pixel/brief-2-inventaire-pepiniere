@@ -17,7 +17,6 @@
 **À vous.** Piste : cherchez comment transformer un tableau en texte JSON, et comment l'indenter.
 
 ## Dans le menu
-
 - Après chaque ajout réussi (et, au bonus, chaque suppression ou modification), enregistrez tout le tableau dans le fichier de données avec `enregistrerJson`.
 - Vérifiez : ajoutez un enregistrement, quittez, relancez `node app.js` : il est toujours là.
 - Pour revenir aux données de départ : `git restore donnees/` suivi du nom du fichier.
